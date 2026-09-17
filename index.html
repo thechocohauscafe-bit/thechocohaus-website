@@ -3,102 +3,387 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>The Chocohaus Cafe</title>
-
+  <title>Menu | The Chocohaus Cafe</title>
+  <meta name="description" content="Explore The Chocohaus Cafe menu in Janakpurdham. Food, coffee, mocktails, hot chocolate, bakery, ice cream and drinks.">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>The Chocohaus Cafeeeeee</h1>
-    <p>Melt, Sip and Repeat.</p>
+<header class="header">
+  <a href="index.html" class="brand">
+    <span class="brand-name">THE CHOCOHAUS</span>
+    <span class="brand-small">CAFE</span>
+  </a>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#order">Order</a>
-      <a href="#reservation">Reservation</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
 
-  <main>
+  <nav class="nav" id="navigation">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active-link">Menu</a>
+    <a href="order.html">Order Online</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="index.html#visit">Visit Us</a>
+  </nav>
+</header>
 
-    <section id="home">
-      <h2>Welcome to The Chocohaus Cafe</h2>
-      <p>Chocolate, coffee, desserts and delicious food in Janakpurdham.</p>
 
-      <a href="#order">Order Now</a>
-      <a href="#reservation">Reserve a Table</a>
-    </section>
+<main>
 
-    <section id="menu">
-      <h2>Our Menu</h2>
+<section class="menu-hero">
+  <p class="section-label">THE CHOCOHAUS CAFE</p>
+  <h1>Our Menu</h1>
+  <p>
+    From savoury favourites to handcrafted coffee,
+    chocolate and something sweet.
+  </p>
+</section>
 
+
+<section class="menu-section">
+
+  <div class="category-buttons">
+    <button class="category-btn active" data-category="all">All</button>
+    <button class="category-btn" data-category="food">Food</button>
+    <button class="category-btn" data-category="coffee">Coffee</button>
+    <button class="category-btn" data-category="mocktails">Mocktails</button>
+    <button class="category-btn" data-category="chocolate">Hot Chocolate</button>
+    <button class="category-btn" data-category="bakery">Bakery</button>
+    <button class="category-btn" data-category="icecream">Ice Cream</button>
+    <button class="category-btn" data-category="drinks">Drinks</button>
+  </div>
+
+
+  <!-- FOOD -->
+  <div class="menu-category" data-section="food">
+    <div class="menu-category-heading">
+      <p>01</p>
       <div>
-        <h3>Cold Coffee</h3>
-        <p>Rs 250</p>
+        <span>SAVOURY</span>
+        <h2>Food</h2>
       </div>
+    </div>
 
+    <div class="menu-items">
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Cheese Garlic Bread</h3>
+          <p>Toasted bread with garlic butter, melted mozzarella & fresh coriander.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 215</strong>
+          <button class="add-btn" data-name="Cheese Garlic Bread" data-price="215">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Mexican Street Fries</h3>
+          <p>Crispy fries loaded with garlic sauce, sour cream, hummus, tomatoes & herbs.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 235</strong>
+          <button class="add-btn" data-name="Mexican Street Fries" data-price="235">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Chilli Cheese Fries</h3>
+          <p>Crispy fries topped with spicy chilli, melted cheese, jalapeños & fried onion.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 225</strong>
+          <button class="add-btn" data-name="Chilli Cheese Fries" data-price="225">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Chilli Cheese Chicken Fries</h3>
+          <p>Fries with juicy chicken, melted cheese, jalapeños & fried onion.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 290</strong>
+          <button class="add-btn" data-name="Chilli Cheese Chicken Fries" data-price="290">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Chicken Shami Kabab</h3>
+          <p>Tender chicken kebabs with aromatic spices, shallow fried to perfection.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 360</strong>
+          <button class="add-btn" data-name="Chicken Shami Kabab" data-price="360">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Mutton Shami Kabab</h3>
+          <p>Classic mutton kebabs with rich spices.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 480</strong>
+          <button class="add-btn" data-name="Mutton Shami Kabab" data-price="480">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Veg Shami Kabab</h3>
+          <p>Flavourful veg kebabs made with chana & aromatic spices.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 310</strong>
+          <button class="add-btn" data-name="Veg Shami Kabab" data-price="310">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Cheese Corn Balls</h3>
+          <p>Crispy golden balls filled with minced chicken and flavourful spices.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 260</strong>
+          <button class="add-btn" data-name="Cheese Corn Balls" data-price="260">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Chicken Corn Balls</h3>
+          <p>Crispy golden balls filled with creamy cheese, sweet corn and chicken.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 290</strong>
+          <button class="add-btn" data-name="Chicken Corn Balls" data-price="290">+ Add</button>
+        </div>
+      </article>
+
+      <article class="menu-item" data-category="food">
+        <div>
+          <h3>Chilli Cheese Nachos</h3>
+          <p>Crunchy nachos loaded with cheese, beans and salsa.</p>
+        </div>
+        <div class="item-action">
+          <strong>Rs 240</strong>
+          <button class="add-btn" data-name="Chilli Cheese Nachos" data-price="240">+ Add</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+
+  <!-- COFFEE -->
+  <div class="menu-category" data-section="coffee">
+
+    <div class="menu-category-heading">
+      <p>02</p>
       <div>
-        <h3>Blue Lagoon</h3>
-        <p>Rs 250</p>
+        <span>COFFEE BAR</span>
+        <h2>Coffee</h2>
       </div>
+    </div>
 
-      <div>
-        <h3>Paneer Chilli</h3>
-        <p>Freshly prepared</p>
-      </div>
+    <div class="menu-items">
 
-    </section>
+      <article class="menu-item" data-category="coffee">
+        <div><h3>Espresso</h3><p>Rich and concentrated coffee.</p></div>
+        <div class="item-action"><strong>Rs 120</strong><button class="add-btn" data-name="Espresso" data-price="120">+ Add</button></div>
+      </article>
 
-    <section id="order">
-      <h2>Order Online</h2>
+      <article class="menu-item" data-category="coffee">
+        <div><h3>Americano Coffee</h3><p>Espresso finished with hot water.</p></div>
+        <div class="item-action"><strong>Rs 150</strong><button class="add-btn" data-name="Americano Coffee" data-price="150">+ Add</button></div>
+      </article>
 
-      <p>Order your favourite food for pickup or delivery.</p>
+      <article class="menu-item" data-category="coffee">
+        <div><h3>Coffee Latte</h3><p>Smooth espresso with creamy milk.</p></div>
+        <div class="item-action"><strong>Rs 230</strong><button class="add-btn" data-name="Coffee Latte" data-price="230">+ Add</button></div>
+      </article>
 
-      <button>Order on WhatsApp</button>
-    </section>
+      <article class="menu-item" data-category="coffee">
+        <div><h3>Cold Coffee with Whipped Cream</h3><p>Cold, creamy coffee finished with whipped cream.</p></div>
+        <div class="item-action"><strong>Rs 250</strong><button class="add-btn" data-name="Cold Coffee with Whipped Cream" data-price="250">+ Add</button></div>
+      </article>
 
-    <section id="reservation">
-      <h2>Reserve a Table</h2>
+      <article class="menu-item" data-category="coffee">
+        <div><h3>Cold Coffee – Caramel Flavor</h3><p>Cold coffee with a sweet caramel finish.</p></div>
+        <div class="item-action"><strong>Rs 280</strong><button class="add-btn" data-name="Cold Coffee Caramel Flavor" data-price="280">+ Add</button></div>
+      </article>
 
-      <form>
+    </div>
+  </div>
 
-        <input type="text" placeholder="Your Name">
 
-        <input type="tel" placeholder="Phone Number">
+  <!-- MOCKTAILS -->
+  <div class="menu-category" data-section="mocktails">
 
-        <input type="date">
+    <div class="menu-category-heading">
+      <p>03</p>
+      <div><span>REFRESH</span><h2>Mocktails</h2></div>
+    </div>
 
-        <input type="time">
+    <div class="menu-items">
 
-        <input type="number" placeholder="Number of Guests">
+      <article class="menu-item" data-category="mocktails">
+        <div><h3>Blue Lagoon Mocktail</h3><p>Bright, refreshing and beautifully blue.</p></div>
+        <div class="item-action"><strong>Rs 250</strong><button class="add-btn" data-name="Blue Lagoon Mocktail" data-price="250">+ Add</button></div>
+      </article>
 
-        <textarea placeholder="Special Request"></textarea>
+      <article class="menu-item" data-category="mocktails">
+        <div><h3>Cafe Special Rainbow Mocktail</h3><p>Our colourful signature layered mocktail.</p></div>
+        <div class="item-action"><strong>Rs 300</strong><button class="add-btn" data-name="Cafe Special Rainbow Mocktail" data-price="300">+ Add</button></div>
+      </article>
 
-        <button type="submit">Reserve Table</button>
+    </div>
+  </div>
 
-      </form>
 
-    </section>
+  <!-- HOT CHOCOLATE -->
+  <div class="menu-category" data-section="chocolate">
 
-    <section id="contact">
-      <h2>Visit Us</h2>
+    <div class="menu-category-heading">
+      <p>04</p>
+      <div><span>OUR SIGNATURE</span><h2>Hot Chocolate Stirrers</h2></div>
+    </div>
 
-      <p>Shiv Chowk, Janakpurdham</p>
-      <p>Phone: +977-9713528819</p>
-    </section>
+    <p class="category-note">
+      Choose your chocolate. Milk with whipped cream and marshmallow can be added for Rs 120.
+    </p>
 
-  </main>
+    <div class="menu-items compact-items">
 
-  <footer>
-    <p>© The Chocohaus Cafe</p>
-  </footer>
+      <article class="menu-item" data-category="chocolate"><div><h3>Oreo</h3></div><div class="item-action"><strong>Rs 120</strong><button class="add-btn" data-name="Oreo Hot Chocolate Stirrer" data-price="120">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Strawberry</h3></div><div class="item-action"><strong>Rs 130</strong><button class="add-btn" data-name="Strawberry Hot Chocolate Stirrer" data-price="130">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Kesar Pista</h3></div><div class="item-action"><strong>Rs 135</strong><button class="add-btn" data-name="Kesar Pista Hot Chocolate Stirrer" data-price="135">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Caramel</h3></div><div class="item-action"><strong>Rs 100</strong><button class="add-btn" data-name="Caramel Hot Chocolate Stirrer" data-price="100">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Choco Blast</h3></div><div class="item-action"><strong>Rs 125</strong><button class="add-btn" data-name="Choco Blast Hot Chocolate Stirrer" data-price="125">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Cinnamon</h3></div><div class="item-action"><strong>Rs 100</strong><button class="add-btn" data-name="Cinnamon Hot Chocolate Stirrer" data-price="100">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Hazel Nut</h3></div><div class="item-action"><strong>Rs 100</strong><button class="add-btn" data-name="Hazel Nut Hot Chocolate Stirrer" data-price="100">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Coffee</h3></div><div class="item-action"><strong>Rs 110</strong><button class="add-btn" data-name="Coffee Hot Chocolate Stirrer" data-price="110">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Rose</h3></div><div class="item-action"><strong>Rs 120</strong><button class="add-btn" data-name="Rose Hot Chocolate Stirrer" data-price="120">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Thandai Masala</h3></div><div class="item-action"><strong>Rs 120</strong><button class="add-btn" data-name="Thandai Masala Hot Chocolate Stirrer" data-price="120">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Marshmello Milk Chocolate</h3></div><div class="item-action"><strong>Rs 125</strong><button class="add-btn" data-name="Marshmello Milk Chocolate Stirrer" data-price="125">+ Add</button></div></article>
+      <article class="menu-item" data-category="chocolate"><div><h3>Elaichi</h3></div><div class="item-action"><strong>Rs 115</strong><button class="add-btn" data-name="Elaichi Hot Chocolate Stirrer" data-price="115">+ Add</button></div></article>
 
-  <script src="script.js"></script>
+    </div>
+  </div>
 
+
+  <!-- BAKERY -->
+  <div class="menu-category" data-section="bakery">
+
+    <div class="menu-category-heading">
+      <p>05</p>
+      <div><span>SOMETHING SWEET</span><h2>Cake & Bakery</h2></div>
+    </div>
+
+    <div class="menu-items">
+
+      <article class="menu-item" data-category="bakery">
+        <div><h3>Rasmalai Cake (Eggless)</h3><p>Available per piece or per pound.</p></div>
+        <div class="item-action"><strong>Rs 160 / piece</strong><span class="secondary-price">Rs 1,850 / lb</span><button class="add-btn" data-name="Rasmalai Cake Piece" data-price="160">+ Add Piece</button></div>
+      </article>
+
+      <article class="menu-item" data-category="bakery">
+        <div><h3>Red Velvet Cake</h3><p>Available per piece or per pound.</p></div>
+        <div class="item-action"><strong>Rs 140 / piece</strong><span class="secondary-price">Rs 1,250 / lb</span><button class="add-btn" data-name="Red Velvet Cake Piece" data-price="140">+ Add Piece</button></div>
+      </article>
+
+      <article class="menu-item" data-category="bakery">
+        <div><h3>Cheese Cake</h3><p>Available per piece or per pound.</p></div>
+        <div class="item-action"><strong>Rs 160 / piece</strong><span class="secondary-price">Rs 1,600 / lb</span><button class="add-btn" data-name="Cheese Cake Piece" data-price="160">+ Add Piece</button></div>
+      </article>
+
+      <article class="menu-item" data-category="bakery"><div><h3>Chocolate Chip Muffins</h3></div><div class="item-action"><strong>Rs 70</strong><button class="add-btn" data-name="Chocolate Chip Muffin" data-price="70">+ Add</button></div></article>
+      <article class="menu-item" data-category="bakery"><div><h3>White Muffins</h3></div><div class="item-action"><strong>Rs 60</strong><button class="add-btn" data-name="White Muffin" data-price="60">+ Add</button></div></article>
+      <article class="menu-item" data-category="bakery"><div><h3>Brownie</h3></div><div class="item-action"><strong>Rs 90</strong><button class="add-btn" data-name="Brownie" data-price="90">+ Add</button></div></article>
+      <article class="menu-item" data-category="bakery"><div><h3>Cookie with Chocolate Chips</h3><p>2 pieces.</p></div><div class="item-action"><strong>Rs 90</strong><button class="add-btn" data-name="Chocolate Chip Cookies (2 pcs)" data-price="90">+ Add</button></div></article>
+
+    </div>
+  </div>
+
+
+  <!-- ICE CREAM -->
+  <div class="menu-category" data-section="icecream">
+
+    <div class="menu-category-heading">
+      <p>06</p>
+      <div><span>KEEP IT COOL</span><h2>Ice Cream</h2></div>
+    </div>
+
+    <div class="menu-items compact-items">
+
+      <article class="menu-item" data-category="icecream"><div><h3>Chocolate Ice Cream</h3></div><div class="item-action"><strong>Rs 70</strong><button class="add-btn" data-name="Chocolate Ice Cream" data-price="70">+ Add</button></div></article>
+      <article class="menu-item" data-category="icecream"><div><h3>Mango Ice Cream</h3></div><div class="item-action"><strong>Rs 80</strong><button class="add-btn" data-name="Mango Ice Cream" data-price="80">+ Add</button></div></article>
+      <article class="menu-item" data-category="icecream"><div><h3>Pistachio Ice Cream</h3></div><div class="item-action"><strong>Rs 90</strong><button class="add-btn" data-name="Pistachio Ice Cream" data-price="90">+ Add</button></div></article>
+      <article class="menu-item" data-category="icecream"><div><h3>Butter Scotch Ice Cream</h3></div><div class="item-action"><strong>Rs 80</strong><button class="add-btn" data-name="Butter Scotch Ice Cream" data-price="80">+ Add</button></div></article>
+
+    </div>
+  </div>
+
+
+  <!-- SOFT DRINKS -->
+  <div class="menu-category" data-section="drinks">
+
+    <div class="menu-category-heading">
+      <p>07</p>
+      <div><span>CHILLED</span><h2>Soft Drinks</h2></div>
+    </div>
+
+    <div class="menu-items compact-items">
+
+      <article class="menu-item" data-category="drinks"><div><h3>Coca Cola</h3></div><div class="item-action"><strong>Rs 95</strong><button class="add-btn" data-name="Coca Cola" data-price="95">+ Add</button></div></article>
+      <article class="menu-item" data-category="drinks"><div><h3>Red Bull</h3></div><div class="item-action"><strong>Rs 215</strong><button class="add-btn" data-name="Red Bull" data-price="215">+ Add</button></div></article>
+      <article class="menu-item" data-category="drinks"><div><h3>Badam Juice</h3></div><div class="item-action"><strong>Rs 190</strong><button class="add-btn" data-name="Badam Juice" data-price="190">+ Add</button></div></article>
+      <article class="menu-item" data-category="drinks"><div><h3>Sting</h3></div><div class="item-action"><strong>Rs 115</strong><button class="add-btn" data-name="Sting" data-price="115">+ Add</button></div></article>
+      <article class="menu-item" data-category="drinks"><div><h3>Amul Milk</h3></div><div class="item-action"><strong>Rs 216</strong><button class="add-btn" data-name="Amul Milk" data-price="216">+ Add</button></div></article>
+      <article class="menu-item" data-category="drinks"><div><h3>Drinking Water</h3></div><div class="item-action"><strong>Rs 45</strong><button class="add-btn" data-name="Drinking Water" data-price="45">+ Add</button></div></article>
+      <article class="menu-item" data-category="drinks"><div><h3>Sprite</h3></div><div class="item-action"><strong>Rs 95</strong><button class="add-btn" data-name="Sprite" data-price="95">+ Add</button></div></article>
+
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- FLOATING CART -->
+<a href="order.html" class="floating-cart" id="floatingCart">
+  <div>
+    <span id="cartCount">0 items</span>
+    <strong>View Order</strong>
+  </div>
+
+  <span id="cartTotal">Rs 0</span>
+</a>
+
+
+<footer class="footer">
+  <div>
+    <h2>THE CHOCOHAUS</h2>
+    <p>Melt. Sip. Repeat.</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="reservation.html">Reservation</a>
+  </div>
+
+  <p class="copyright">
+    © 2026 The Chocohaus Cafe • Shiv Chowk, Janakpurdham
+  </p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
