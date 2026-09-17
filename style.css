@@ -254,3 +254,162 @@
     min-width: 90px;
   }
 }
+/* =========================
+   HOME - ABOUT CHOCOHAUS
+========================= */
+
+.about-home {
+  background: #f6ecdf;
+  color: #321a12;
+  text-align: center;
+  padding: 100px 20px 110px;
+}
+
+.about-home > * {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-small-title {
+  color: #a7683f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 22px;
+}
+
+.about-home h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+.about-home h2 span {
+  font-style: italic;
+  color: #6c351f;
+}
+
+.established {
+  display: inline-block;
+  width: auto;
+  padding: 9px 20px;
+  margin-top: 5px;
+  border-top: 1px solid #b88a68;
+  border-bottom: 1px solid #b88a68;
+  color: #8c5636;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.about-divider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #b1774e;
+}
+
+.about-divider::before,
+.about-divider::after {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  background: #cbb29d;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+.about-home p {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #685349;
+  margin-bottom: 20px;
+}
+
+.about-home .about-intro {
+  font-size: 21px;
+  color: #493127;
+}
+
+.guest-message {
+  margin-top: 35px;
+}
+
+.about-home .guest-message strong {
+  color: #6c351f;
+}
+
+.about-signature {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-style: italic;
+  color: #a15b35;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.explore-menu-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: #321a12;
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 28px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.explore-menu-btn:hover {
+  background: #9b6037;
+  transform: translateY(-2px);
+}
+
+.explore-menu-btn span {
+  font-size: 19px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .about-home {
+    padding: 70px 22px 80px;
+  }
+
+  .about-small-title {
+    font-size: 10px;
+    letter-spacing: 4px;
+  }
+
+  .about-home h2 {
+    font-size: 43px;
+  }
+
+  .about-home .about-intro {
+    font-size: 19px;
+  }
+
+  .about-home p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .about-divider::before,
+  .about-divider::after {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  .about-signature {
+    font-size: 24px;
+  }
+
+}
