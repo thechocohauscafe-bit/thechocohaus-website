@@ -413,3 +413,22 @@
   }
 
 }
+.home-logo {
+  margin: 25px auto 28px;
+  text-align: center;
+}
+
+.home-logo img {
+  width: 230px;
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .home-logo img {
+    width: 190px;
+  }
+}
