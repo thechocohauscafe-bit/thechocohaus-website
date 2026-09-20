@@ -761,3 +761,110 @@
   }
 
 }
+/* ===== CHOCOHAUS HORIZONTAL NAVBAR ===== */
+
+.site-header {
+  width: 100%;
+  background: #2c160e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  max-width: 1300px;
+  height: 75px;
+  margin: 0 auto;
+  padding: 0 45px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+/* Cafe name */
+.nav-logo {
+  color: #fff5e8;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+/* Right-side navigation */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 38px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff5e8;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  padding: 28px 0;
+  transition: color 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: #d99a58;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .nav-links {
+    gap: 22px;
+  }
+
+  .nav-logo {
+    font-size: 17px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+
+  .navbar {
+    height: 65px;
+    padding: 0 15px;
+    gap: 25px;
+    overflow-x: auto;
+  }
+
+  .nav-logo {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    padding: 22px 0;
+  }
+}
