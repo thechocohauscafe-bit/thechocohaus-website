@@ -1,1 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Your Order | The Chocohaus Cafe</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+  <a href="index.html" class="brand">
+    <span class="brand-name">THE CHOCOHAUS</span>
+    <span class="brand-small">CAFE</span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+    ☰
+  </button>
+
+  <nav class="nav" id="navigation">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html" class="active-link">Order Online</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="index.html#visit">Visit Us</a>
+  </nav>
+
+</header>
+
+
+<main class="order-page">
+
+  <section class="order-heading">
+
+    <p class="section-label">THE CHOCOHAUS CAFE</p>
+
+    <h1>Your Order</h1>
+
+    <p>
+      Review your selections before placing your order.
+    </p>
+
+  </section>
+
+
+  <section class="order-container">
+
+    <!-- ORDER ITEMS -->
+
+    <div class="order-box">
+
+      <div class="order-title">
+        <div>
+          <span>YOUR SELECTION</span>
+          <h2>Order Summary</h2>
+        </div>
+
+        <a href="menu.html">+ Add more</a>
+      </div>
+
+
+      <!-- JavaScript puts products here -->
+
+      <div id="orderItems"></div>
+
+
+      <!-- EMPTY CART -->
+
+      <div id="emptyCart" class="empty-cart">
+
+        <div class="empty-cart-icon">♡</div>
+
+        <h3>Your order is empty</h3>
+
+        <p>
+          Add something delicious from our menu.
+        </p>
+
+        <a href="menu.html" class="order-menu-button">
+          EXPLORE MENU
+        </a>
+
+      </div>
+
+
+      <!-- TOTAL -->
+
+      <div id="orderTotals" class="order-totals">
+
+        <div>
+          <span>Subtotal</span>
+          <span id="subtotal">Rs 0</span>
+        </div>
+
+        <div class="grand-total">
+          <strong>Total</strong>
+          <strong id="grandTotal">Rs 0</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CUSTOMER DETAILS -->
+
+    <div class="checkout-box" id="checkoutBox">
+
+      <span class="checkout-label">COMPLETE YOUR ORDER</span>
+
+      <h2>How would you like it?</h2>
+
+
+      <!-- PICKUP / DELIVERY -->
+
+      <div class="order-type">
+
+        <label class="type-option">
+          <input
+            type="radio"
+            name="orderType"
+            value="Pickup"
+            checked
+          >
+
+          <span>
+            <strong>Pickup</strong>
+            <small>Collect from Shiv Chowk</small>
+          </span>
+        </label>
+
+
+        <label class="type-option">
+          <input
+            type="radio"
+            name="orderType"
+            value="Delivery"
+          >
+
+          <span>
+            <strong>Delivery</strong>
+            <small>Deliver to your address</small>
+          </span>
+        </label>
+
+      </div>
+
+
+      <!-- CUSTOMER INFORMATION -->
+
+      <div class="customer-form">
+
+        <label>
+          Your Name *
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your name"
+            required
+          >
+        </label>
+
+
+        <label>
+          Phone Number *
+          <input
+            type="tel"
+            id="customerPhone"
+            placeholder="98XXXXXXXX"
+            required
+          >
+        </label>
+
+
+        <!-- DELIVERY ADDRESS -->
+
+        <div id="deliveryFields" class="delivery-fields">
+
+          <label>
+            Delivery Address *
+            <textarea
+              id="customerAddress"
+              rows="3"
+              placeholder="Street, area, landmark..."
+            ></textarea>
+          </label>
+
+        </div>
+
+
+        <label>
+          Special Instructions
+          <textarea
+            id="orderNote"
+            rows="3"
+            placeholder="Any special request for your order?"
+          ></textarea>
+        </label>
+
+      </div>
+
+
+      <!-- PLACE ORDER -->
+
+      <button
+        type="button"
+        id="placeOrderBtn"
+        class="place-order-btn"
+      >
+        Place Order on WhatsApp
+        <span>→</span>
+      </button>
+
+
+      <p class="whatsapp-note">
+        Your order will be sent to The Chocohaus Cafe through WhatsApp.
+      </p>
+
+
+      <div id="orderError" class="order-error"></div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div>
+    <h2>THE CHOCOHAUS</h2>
+    <p>Melt. Sip. Repeat.</p>
+  </div>
+
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="reservation.html">Reservation</a>
+  </div>
+
+  <p class="copyright">
+    © 2026 The Chocohaus Cafe • Shiv Chowk, Janakpurdham
+  </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
