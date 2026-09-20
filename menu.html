@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Menu | The Chocohaus Cafe</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+  <a href="index.html" class="brand">
+    <span class="brand-name">THE CHOCOHAUS</span>
+    <span class="brand-small">CAFE</span>
+  </a>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active-link">Menu</a>
+    <a href="order.html">Order Online</a>
+    <a href="reservation.html">Reservation</a>
+    <a href="index.html#visit">Visit Us</a>
+  </nav>
+
+</header>
+
+
+<!-- ================= MENU HERO ================= -->
+
+<section class="menu-hero">
+
+  <p class="menu-eyebrow">THE CHOCOHAUS CAFE</p>
+
+  <h1>Our Menu</h1>
+
+  <p class="menu-subtitle">
+    From savoury favourites to handcrafted coffee,
+    chocolate and something sweet.
+  </p>
+
+</section>
+
+
+<!-- ================= CATEGORY NAV ================= -->
+
+<div class="category-nav">
+
+  <a href="#food">Food</a>
+  <a href="#stirrers">Hot Chocolate</a>
+  <a href="#coffee">Coffee</a>
+  <a href="#cold-coffee">Cold Coffee</a>
+  <a href="#mocktails">Mocktails</a>
+  <a href="#softdrinks">Soft Drinks</a>
+  <a href="#icecream">Ice Cream</a>
+  <a href="#bakery">Bakery</a>
+
+</div>
+
+
+<main class="menu-container">
+
+
+<!-- ================= FOOD ================= -->
+
+<section class="menu-category" id="food">
+
+  <div class="category-heading">
+    <p>SAVOURY</p>
+    <h2>Food</h2>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <div>
+        <h3>Cheese Garlic Bread</h3>
+        <p>Toasted bread with garlic butter, melted mozzarella & fresh coriander.</p>
+      </div>
+      <span class="price">Rs 215</span>
+      <button onclick="addToCart('Cheese Garlic Bread',215)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Mexican Street Fries</h3>
+        <p>Crispy fries loaded with garlic sauce, sour cream, hummus, tomatoes & herbs.</p>
+      </div>
+      <span class="price">Rs 235</span>
+      <button onclick="addToCart('Mexican Street Fries',235)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chilli Cheese Fries</h3>
+        <p>Crispy fries topped with spicy chilli, melted cheese, jalapeños & fried onion.</p>
+      </div>
+      <span class="price">Rs 225</span>
+      <button onclick="addToCart('Chilli Cheese Fries',225)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chilli Cheese Chicken Fries</h3>
+        <p>Fries with juicy chicken, melted cheese, jalapeños & fried onion.</p>
+      </div>
+      <span class="price">Rs 290</span>
+      <button onclick="addToCart('Chilli Cheese Chicken Fries',290)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chicken Shami Kabab</h3>
+        <p>Tender chicken kebabs with aromatic spices.</p>
+      </div>
+      <span class="price">Rs 360</span>
+      <button onclick="addToCart('Chicken Shami Kabab',360)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Mutton Shami Kabab</h3>
+        <p>Classic mutton kebabs with rich spices.</p>
+      </div>
+      <span class="price">Rs 480</span>
+      <button onclick="addToCart('Mutton Shami Kabab',480)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Veg Shami Kabab</h3>
+        <p>Flavourful veg kebabs made with chana and aromatic spices.</p>
+      </div>
+      <span class="price">Rs 310</span>
+      <button onclick="addToCart('Veg Shami Kabab',310)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Cheese Corn Balls</h3>
+        <p>Crispy golden balls filled with minced vegetables, cheese and spices.</p>
+      </div>
+      <span class="price">Rs 260</span>
+      <button onclick="addToCart('Cheese Corn Balls',260)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chicken Corn Balls</h3>
+        <p>Crispy golden balls filled with creamy cheese, sweet corn and chicken.</p>
+      </div>
+      <span class="price">Rs 290</span>
+      <button onclick="addToCart('Chicken Corn Balls',290)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Chilli Cheese Nachos</h3>
+        <p>Crunchy nachos loaded with cheese, beans and salsa.</p>
+      </div>
+      <span class="price">Rs 240</span>
+      <button onclick="addToCart('Chilli Cheese Nachos',240)">Add +</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= HOT CHOCOLATE ================= -->
+
+<section class="menu-category" id="stirrers">
+
+  <div class="category-heading">
+    <p>OUR SPECIALITY</p>
+    <h2>Hot Chocolate Stirrers</h2>
+    <span>Served with milk, whipped cream & marshmallow.</span>
+  </div>
+
+  <div class="menu-grid compact-grid">
+
+    <div class="menu-item">
+      <h3>Oreo</h3>
+      <span class="price">Rs 120</span>
+      <button onclick="addToCart('Oreo Hot Chocolate Stirrer',120)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Strawberry</h3>
+      <span class="price">Rs 130</span>
+      <button onclick="addToCart('Strawberry Hot Chocolate Stirrer',130)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Kesar Pista</h3>
+      <span class="price">Rs 135</span>
+      <button onclick="addToCart('Kesar Pista Hot Chocolate Stirrer',135)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Caramel</h3>
+      <span class="price">Rs 100</span>
+      <button onclick="addToCart('Caramel Hot Chocolate Stirrer',100)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Choco Blast</h3>
+      <span class="price">Rs 125</span>
+      <button onclick="addToCart('Choco Blast Hot Chocolate Stirrer',125)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Cinnamon</h3>
+      <span class="price">Rs 100</span>
+      <button onclick="addToCart('Cinnamon Hot Chocolate Stirrer',100)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Hazelnut</h3>
+      <span class="price">Rs 100</span>
+      <button onclick="addToCart('Hazelnut Hot Chocolate Stirrer',100)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Coffee</h3>
+      <span class="price">Rs 110</span>
+      <button onclick="addToCart('Coffee Hot Chocolate Stirrer',110)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Rose</h3>
+      <span class="price">Rs 120</span>
+      <button onclick="addToCart('Rose Hot Chocolate Stirrer',120)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Thandai Masala</h3>
+      <span class="price">Rs 120</span>
+      <button onclick="addToCart('Thandai Masala Hot Chocolate Stirrer',120)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Marshmallow Milk Chocolate</h3>
+      <span class="price">Rs 125</span>
+      <button onclick="addToCart('Marshmallow Milk Chocolate Stirrer',125)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Elaichi</h3>
+      <span class="price">Rs 115</span>
+      <button onclick="addToCart('Elaichi Hot Chocolate Stirrer',115)">Add +</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= COFFEE ================= -->
+
+<section class="menu-category" id="coffee">
+
+  <div class="category-heading">
+    <p>FRESHLY BREWED</p>
+    <h2>Coffee</h2>
+  </div>
+
+  <div class="menu-grid compact-grid">
+
+    <div class="menu-item">
+      <h3>Espresso</h3>
+      <span class="price">Rs 120</span>
+      <button onclick="addToCart('Espresso',120)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Americano Coffee</h3>
+      <span class="price">Rs 150</span>
+      <button onclick="addToCart('Americano Coffee',150)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Coffee Latte</h3>
+      <span class="price">Rs 230</span>
+      <button onclick="addToCart('Coffee Latte',230)">Add +</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= COLD COFFEE ================= -->
+
+<section class="menu-category" id="cold-coffee">
+
+  <div class="category-heading">
+    <p>CHILLED</p>
+    <h2>Cold Coffee</h2>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <div>
+        <h3>Cold Coffee with Whipped Cream</h3>
+      </div>
+      <span class="price">Rs 250</span>
+      <button onclick="addToCart('Cold Coffee with Whipped Cream',250)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Cold Coffee Caramel Flavor</h3>
+      </div>
+      <span class="price">Rs 280</span>
+      <button onclick="addToCart('Cold Coffee Caramel Flavor',280)">Add +</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= MOCKTAILS ================= -->
+
+<section class="menu-category" id="mocktails">
+
+  <div class="category-heading">
+    <p>REFRESHING</p>
+    <h2>Mocktails</h2>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <h3>Blue Lagoon Mocktail</h3>
+      <span class="price">Rs 250</span>
+      <button onclick="addToCart('Blue Lagoon Mocktail',250)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Cafe Special Rainbow Mocktail</h3>
+      <span class="price">Rs 300</span>
+      <button onclick="addToCart('Cafe Special Rainbow Mocktail',300)">Add +</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SOFT DRINKS ================= -->
+
+<section class="menu-category" id="softdrinks">
+
+  <div class="category-heading">
+    <p>CHILLED</p>
+    <h2>Soft Drinks</h2>
+  </div>
+
+  <div class="menu-grid compact-grid">
+
+    <div class="menu-item">
+      <h3>Coca Cola</h3>
+      <span class="price">Rs 95</span>
+      <button onclick="addToCart('Coca Cola',95)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Red Bull</h3>
+      <span class="price">Rs 215</span>
+      <button onclick="addToCart('Red Bull',215)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Badam Juice</h3>
+      <span class="price">Rs 190</span>
+      <button onclick="addToCart('Badam Juice',190)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Sting</h3>
+      <span class="price">Rs 115</span>
+      <button onclick="addToCart('Sting',115)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Amul Milk</h3>
+      <span class="price">Rs 216</span>
+      <button onclick="addToCart('Amul Milk',216)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Drinking Water</h3>
+      <span class="price">Rs 45</span>
+      <button onclick="addToCart('Drinking Water',45)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Sprite</h3>
+      <span class="price">Rs 95</span>
+      <button onclick="addToCart('Sprite',95)">Add +</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ICE CREAM ================= -->
+
+<section class="menu-category" id="icecream">
+
+  <div class="category-heading">
+    <p>SOMETHING COLD</p>
+    <h2>Ice Cream</h2>
+  </div>
+
+  <div class="menu-grid compact-grid">
+
+    <div class="menu-item">
+      <h3>Chocolate Ice Cream</h3>
+      <span class="price">Rs 70</span>
+      <button onclick="addToCart('Chocolate Ice Cream',70)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Mango Ice Cream</h3>
+      <span class="price">Rs 80</span>
+      <button onclick="addToCart('Mango Ice Cream',80)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Pistachio Ice Cream</h3>
+      <span class="price">Rs 90</span>
+      <button onclick="addToCart('Pistachio Ice Cream',90)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Butter Scotch Ice Cream</h3>
+      <span class="price">Rs 80</span>
+      <button onclick="addToCart('Butter Scotch Ice Cream',80)">Add +</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= BAKERY ================= -->
+
+<section class="menu-category" id="bakery">
+
+  <div class="category-heading">
+    <p>SOMETHING SWEET</p>
+    <h2>Cake & Bakery</h2>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-item">
+      <div>
+        <h3>Rasmalai Cake — Eggless</h3>
+        <p>Per piece Rs 160 · Per pound Rs 1850</p>
+      </div>
+      <span class="price">Rs 160</span>
+      <button onclick="addToCart('Rasmalai Cake - Piece',160)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Red Velvet Cake</h3>
+        <p>Per piece Rs 140 · Per pound Rs 1250</p>
+      </div>
+      <span class="price">Rs 140</span>
+      <button onclick="addToCart('Red Velvet Cake - Piece',140)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Cheesecake</h3>
+        <p>Per piece Rs 160 · Per pound Rs 1600</p>
+      </div>
+      <span class="price">Rs 160</span>
+      <button onclick="addToCart('Cheesecake - Piece',160)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Chocolate Chip Muffin</h3>
+      <span class="price">Rs 70</span>
+      <button onclick="addToCart('Chocolate Chip Muffin',70)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>White Muffin</h3>
+      <span class="price">Rs 60</span>
+      <button onclick="addToCart('White Muffin',60)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Brownie</h3>
+      <span class="price">Rs 90</span>
+      <button onclick="addToCart('Brownie',90)">Add +</button>
+    </div>
+
+    <div class="menu-item">
+      <div>
+        <h3>Cookie with Chocolate Chips</h3>
+        <p>2 pieces</p>
+      </div>
+      <span class="price">Rs 90</span>
+      <button onclick="addToCart('Chocolate Chip Cookies - 2 pcs',90)">Add +</button>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FLOATING CART ================= -->
+
+<a href="order.html" class="floating-cart">
+
+  <span>🛒</span>
+
+  <span>
+    View Order
+    <strong id="cartCount">0</strong>
+  </span>
+
+  <span id="cartTotal">Rs 0</span>
+
+</a>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="menu-footer">
+
+  <h3>The Chocohaus Cafe</h3>
+
+  <p>Melt. Sip. Repeat.</p>
+
+  <p>Shiv Chowk, Janakpurdham-02, Nepal</p>
+
+</footer>
+
+
+<script>
+
+/* ===============================
+   SHOPPING CART
+================================ */
+
+let cart = JSON.parse(localStorage.getItem("chocohausCart")) || [];
+
+
+function addToCart(name, price) {
+
+  const existingItem = cart.find(item => item.name === name);
+
+  if (existingItem) {
+
+    existingItem.quantity += 1;
+
+  } else {
+
+    cart.push({
+      name: name,
+      price: price,
+      quantity: 1
+    });
+
+  }
+
+  localStorage.setItem(
+    "chocohausCart",
+    JSON.stringify(cart)
+  );
+
+  updateCart();
+
+}
+
+
+function updateCart() {
+
+  let quantity = 0;
+  let total = 0;
+
+  cart.forEach(item => {
+
+    quantity += item.quantity;
+
+    total += item.price * item.quantity;
+
+  });
+
+  document.getElementById("cartCount").textContent = quantity;
+
+  document.getElementById("cartTotal").textContent =
+    "Rs " + total;
+
+}
+
+
+updateCart();
+
+</script>
+
+</body>
+</html>
