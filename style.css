@@ -414,21 +414,25 @@
 
 }
 .home-logo {
-  margin: 25px auto 28px;
-  text-align: center;
+  width: 300px;
+  height: 250px;          /* visible cropped area */
+  margin: 20px auto 30px;
+  overflow: hidden;       /* crops the extra white area */
+  position: relative;
 }
 
 .home-logo img {
-  width: 230px;
-  max-width: 70%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* crops instead of showing whole image */
+  object-position: center;
   display: block;
-  margin: 0 auto;
-  border-radius: 12px;
+  border-radius: 0;
 }
 
 @media (max-width: 600px) {
-  .home-logo img {
-    width: 190px;
+  .home-logo {
+    width: 230px;
+    height: 190px;
   }
 }
